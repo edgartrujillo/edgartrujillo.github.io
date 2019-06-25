@@ -197,12 +197,12 @@ mongoimport --db market --collection stocks --file stocks.json
 > An index will be needed on the text as well 
 > in Mongo shell after json is imported
 
+> In Mongo Shell
 ``` 
-In Mongo Shell
 use market
 db.stocks.createIndex( { Company: "text" } )
-End Mongo Shell 
-```
+``` 
+> End Mongo Shell 
 
 > Afterwards to run API
 ```
