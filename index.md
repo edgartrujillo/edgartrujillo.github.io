@@ -12,13 +12,6 @@
 These are some of the questions that I have begun asking myself more frequently ever since I started pursuing a degree in Computer Science. I have always loved a good challenge and using my creativeness to solve a problem in a unique way. While pursuing my degree, not only have I showcased my development strengths, but I have also demonstrated how quickly I can turn a weakness into a strength. Desiring a career in the Computer Science field usually means you will hold a position that requires you to know how to develop error-free code and perhaps use multiple different languages. I have since put into practice the belief that anyone can quickly learn a new programing language, because the only differentiating factor is usually the code syntax; The underlying algorithms, concepts of variables, data structures, and functions is still the same. Therefore, I suggest people should develop a better understanding on the Foundations of Computer Science before writing code. Having a good understanding of the foundations of Computer Science can transform anyone into a collaborative team member, who can communicate to stakeholders, assist in the implementation of data structures and algorithms, and assist in the design of software and databases. Throughout my program, I have not only gained a strong knowledge in the foundations of Computer Science, but I have implemented and developed applications that demonstrate my ability to think long term since I always ensure the code I write is well commented, reusable, and understandable incase someone else decides to expand on it. 
 For my capstone project, I was tasked with showcasing my skills and abilities in three key categories: Software design and engineering, Algorithms and data structure, and Databases. I decided to develop a project that showed the iteration and progression from each key category based on the final project from a previous class, CS-340 Advanced Programing. This final project was a RESTful API written in Python that provided an interface to a MongoDB containing detailed information on various stocks. Firstly, I decided to refactor the code from Python to Node.js to expand its usability. Second, after the code was refactored, I iterated the API by adding an authorization and authentication feature to ensure only approved users could utilize the API and thus increased the security of it. Lastly, I decided to expand on the API capabilities by adding more API methods and endpoints. 
 
-
-### Enhancement One
-You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
-
-
-The artifact I decided to use for my first enhancement was a RESTful API I wrote in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement I decided to rewrite the python API to work with Node.js as well. I was really interested in this artifact since I first started working on it for my CS-340 class. In the past few years, the popularity of RESTful APIs has gone through the roof. Companies are now breaking up their monolithic programs into different microservices to increase efficiency and speed. Python and Node.js are popular languages that are used to accomplish this and since I had already created the API in Python, I wanted to challenge myself and accomplish the same with the JavaScript language. I think this will be beneficial for others as well because if we considered this project opened to others, then having both a Python and Node.js API available to developers will ensure they can keep the same language throughout their full project instead of having a piece written in Python. I believe this demonstrates an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals. Perhaps the most challenging part while working on this enhancement was my constant mix up of wanting to write the application with a Python syntax style when the JavaScript syntax is very different. I also learned how to set up a simple server in node.js that listened for API calls and then correctly responded. I definitely learned that I enjoyed working with Node.js as a backend language as well. 
-
 ### Original Python API 
 
 ```python
@@ -174,7 +167,24 @@ if __name__ == '__main__': #declare instance of request
     run(host='localhost', port=8080)
 ```
 
-         
+### Preparing 
+Before beginning development on any of the enhancements, I first needed to get familiar with Node.js
+I decided to follow the recommeneded approach of utilizing the **MVC model**
+```
+M - Models
+V - Views
+C - Controllers 
+
+I also created a different folder that defined the routes
+stocks.routes.js - shows the possible routes the API handles
+app.js - main server file 
+```
+
+### Enhancement One
+You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
+
+
+The artifact I decided to use for my first enhancement was a RESTful API I wrote in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement I decided to rewrite the python API to work with Node.js as well. I was really interested in this artifact since I first started working on it for my CS-340 class. In the past few years, the popularity of RESTful APIs has gone through the roof. Companies are now breaking up their monolithic programs into different microservices to increase efficiency and speed. Python and Node.js are popular languages that are used to accomplish this and since I had already created the API in Python, I wanted to challenge myself and accomplish the same with the JavaScript language. I think this will be beneficial for others as well because if we considered this project opened to others, then having both a Python and Node.js API available to developers will ensure they can keep the same language throughout their full project instead of having a piece written in Python. I believe this demonstrates an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals. Perhaps the most challenging part while working on this enhancement was my constant mix up of wanting to write the application with a Python syntax style when the JavaScript syntax is very different. I also learned how to set up a simple server in node.js that listened for API calls and then correctly responded. I definitely learned that I enjoyed working with Node.js as a backend language as well.          
          
 
 
