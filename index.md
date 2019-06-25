@@ -180,6 +180,36 @@ stocks.routes.js - shows the possible routes the API handles
 app.js - main server file 
 ```
 
+### Running Enhancements
+
+> To run API 
+> Be sure to have a MongoDB sever installed locally 
+
+> I have included the stocks.json as well 
+
+> Import the stocks.json into the db
+> with Mongoimport 
+
+```
+mongoimport --db market --collection stocks --file stocks.json 
+```
+
+> An index will be needed on the text as well 
+> in Mongo shell after json is imported
+
+``` 
+In Mongo Shell
+use market
+db.stocks.createIndex( { Company: "text" } )
+End Mongo Shell 
+```
+
+> Afterwards to run API
+```
+node app.js
+```
+
+
 ### Enhancement One
 You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
 
