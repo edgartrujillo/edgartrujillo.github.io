@@ -19,6 +19,164 @@ You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgar
 
 The artifact I decided to use for my first enhancement was a RESTful API I wrote in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement I decided to rewrite the python API to work with Node.js as well. I was really interested in this artifact since I first started working on it for my CS-340 class. In the past few years, the popularity of RESTful APIs has gone through the roof. Companies are now breaking up their monolithic programs into different microservices to increase efficiency and speed. Python and Node.js are popular languages that are used to accomplish this and since I had already created the API in Python, I wanted to challenge myself and accomplish the same with the JavaScript language. I think this will be beneficial for others as well because if we considered this project opened to others, then having both a Python and Node.js API available to developers will ensure they can keep the same language throughout their full project instead of having a piece written in Python. I believe this demonstrates an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals. Perhaps the most challenging part while working on this enhancement was my constant mix up of wanting to write the application with a Python syntax style when the JavaScript syntax is very different. I also learned how to set up a simple server in node.js that listened for API calls and then correctly responded. I definitely learned that I enjoyed working with Node.js as a backend language as well. 
 
+### Original Python API 
+
+```python
+import json
+from json import dumps
+from bson import json_util
+from pymongo import MongoClient
+import sys
+import bottle
+from bottle import route, run, request, abort, post, get, put, delete ,response
+
+connection = MongoClient('localhost', 27017)
+db = connection['market']
+collection = db['stocks']
+
+# Beginnning of Support functions
+def getMovingAverageCount(min, max):
+  result = collection.find({ "50-Day Simple Moving Average":
+    {
+      '$gte': min ,
+      '$lte': max
+    }
+  }).count()
+  return result
+
+def industryMatch(string):
+  result = collection.find(
+  {
+    "Industry" : string
+  }  ).limit(5)
+  return result 
+
+def getSector(string):
+  pipline = [
+    { '$match': { "Sector": string}},
+    { '$group': { "_id" : "$Industry" , "Shares Outstanding" :  {"$sum": "$Shares Outstanding"}} }
+  ]
+  result = collection.aggregate(pipline)
+  return result 
+  
+def delete_document(key, value):
+  result = collection.delete_one({key:value})
+  if not result:
+    abort(404, 'No document with %s : %s' % key,value) 
+  return result
+
+def update_document(key, value,document):
+  result = collection.update({key:value},{ '$set': document }, upsert=False,multi=False) 
+  if not result:
+    abort(404, 'No document with %s : %s' % key,value)
+  return json.loads(json.dumps(result, indent=4, default=json_util.default))
+
+def get_document(key, value):
+  document = collection.find_one({key:value})
+  if not document:
+    abort(404, 'No document with %s : %s' % key,value)
+  return document
+
+def insert_document(document):
+  try:
+    result = collection.save(document)
+  except (ValidationError) as ve:
+    abort(400, str(ve))
+#  return result
+# End of support functions
+
+# Begin of API def
+
+
+@put('/stocks/api/v1.0/updateStock/<sym>')
+def update_stock(sym):
+  try:
+    result = request.json
+    update_document("Ticker", sym, result)
+  except error:
+    abort(404,'Error')   
+  print "Complete"
+
+@post('/stocks/api/v1.0/createStock/<sym>')
+def post_stock(sym):
+    try:
+      result = request.json
+      data = insert_document(result)
+      print(data)
+    except error:
+      abort(404,'Error')
+#    return result
+
+@post('/stocks/api/v1.0/stockReport')
+def post_stockReport():
+    list = []
+    try:
+      result = request.body
+      for i in result:
+        if len(i) > 0:
+          string = i
+      print(string)
+      string = string.replace('[',"")
+      string = string.replace(']',"")
+      symbols = string.split(',')
+      for i in symbols:
+        print(i)
+        list.append(get_document("Ticker",i))
+        
+    except error:
+      abort(404,'Error')
+    return str(list)
+
+@delete('/stocks/api/v1.0/deleteStock/<sym>')
+def delete_stock(sym):
+  try:  
+    result = delete_document("Ticker", sym)
+  except NameError:
+    abort(404, 'No parameter')
+  return bottle.HTTPResponse(status=200)
+
+
+@route('/stocks/api/v1.0/getStock/<sym>')
+def get_stock(sym):  
+    try:
+      string = get_document("Ticker", sym)
+    except NameError:
+        abort(404, 'No parameter')
+    return json.loads(json.dumps(string, indent=4, default=json_util.default))
+
+
+
+@route('/stocks/api/v1.0/portfolio/<sym>')
+def get_portfolio(sym):  
+    list = []
+    try:
+      result = collection.find( {'$text': {'$search':sym }})
+      for i in result:
+        list.append(i)
+    except NameError:
+        abort(404, 'No parameter')
+    return str(list)#json.loads(json.dumps(string, indent=4, default=json_util.default))
+  
+@route('/stocks/api/v1.0/industryReport/<sym>')
+def get_industryReport(sym):  
+    list = []
+    try:
+      result = industryMatch(sym)
+      for i in result:
+        list.append(i)
+    except NameError:
+        abort(404, 'No parameter')
+    return str(list)#json.loads(json.dumps(string, indent=4, default=json_util.default))
+    
+  
+if __name__ == '__main__': #declare instance of request
+    #app.run(debug=True)
+    run(host='localhost', port=8080)
+```
+
+         
+         
+
 
 ### Enhancement Two
 You can find the code at [Enhancement Two Bitbucket](https://bitbucket.org/edgarr_t/enhancementtwo/src/master/).
