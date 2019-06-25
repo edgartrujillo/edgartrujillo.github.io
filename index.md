@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+## Edgar Trujillo's ePortfolio
 
-You can use the [editor on GitHub](https://github.com/edgartrujillo/edgartrujillo.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+**How can I develop this idea?** 
+**How can I break this API? **
+**What more can I add?** 
+**How can I secure this better?**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+These are some of the questions that I have begun asking myself more frequently ever since I started pursuing a degree in Computer Science. I have always loved a good challenge and using my creativeness to solve a problem in a unique way. While pursuing my degree, not only have I showcased my development strengths, but I have also demonstrated how quickly I can turn a weakness into a strength. Desiring a career in the Computer Science field usually means you will hold a position that requires you to know how to develop error-free code and perhaps use multiple different languages. I have since put into practice the belief that anyone can quickly learn a new programing language, because the only differentiating factor is usually the code syntax; The underlying algorithms, concepts of variables, data structures, and functions is still the same. Therefore, I suggest people should develop a better understanding on the Foundations of Computer Science before writing code. Having a good understanding of the foundations of Computer Science can transform anyone into a collaborative team member, who can communicate to stakeholders, assist in the implementation of data structures and algorithms, and assist in the design of software and databases. Throughout my program, I have not only gained a strong knowledge in the foundations of Computer Science, but I have implemented and developed applications that demonstrate my ability to think long term since I always ensure the code I write is well commented, reusable, and understandable incase someone else decides to expand on it. 
+For my capstone project, I was tasked with showcasing my skills and abilities in three key categories: Software design and engineering, Algorithms and data structure, and Databases. I decided to develop a project that showed the iteration and progression from each key category based on the final project from a previous class, CS-340 Advanced Programing. This final project was a RESTful API written in Python that provided an interface to a MongoDB containing detailed information on various stocks. Firstly, I decided to refactor the code from Python to Node.js to expand its usability. Second, after the code was refactored, I iterated the API by adding an authorization and authentication feature to ensure only approved users could utilize the API and thus increased the security of it. Lastly, I decided to expand on the API capabilities by adding more API methods and endpoints. 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/edgartrujillo/edgartrujillo.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
