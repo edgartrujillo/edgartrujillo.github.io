@@ -225,8 +225,10 @@ The artifact I decided to use for my first enhancement was a RESTful API I wrote
 #### Securing the API
 You can find the code at [Enhancement Two Bitbucket](https://bitbucket.org/edgarr_t/enhancementtwo/src/master/).
 
+![alt text][logo]
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_3.png "Register for a Token")
+[logo]: https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_3.png "Register for a Token"
+
 
 ![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_4.png "No Token")
 
