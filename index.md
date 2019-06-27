@@ -172,6 +172,12 @@ if __name__ == '__main__': #declare instance of request
     run(host='localhost', port=8080)
 ```
 
+### Code Review on Initial Python Code 
+![Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_10.png)
+You can find the powerpoint presentation at [Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Code%20Reviews.pptx).
+
+
+
 ### Preparing 
 Before beginning development on any of the enhancements, I first needed to get familiar with Node.js
 I decided to follow the recommeneded approach of utilizing the **MVC model**
