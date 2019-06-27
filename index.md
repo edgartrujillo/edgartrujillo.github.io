@@ -214,6 +214,8 @@ node app.js
 ```
 
 
+
+
 ### Enhancement One
 #### Refactoring the Python code into JavaScript and using Node.js as the backend  
 You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
@@ -224,7 +226,11 @@ You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgar
 In cases where image doesn't load [Enhancement One Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_7.png "Enhancement One Routes")
 
 
+
+
 ![Creating a Stock](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_9.png "Creating a Stock")
+
+
 
 
 In cases where image doesn't load [Creating a Stock](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_9.png "Creating a Stock")
@@ -233,6 +239,8 @@ In cases where image doesn't load [Creating a Stock](https://github.com/edgartru
 
 The artifact I decided to use for my first enhancement was a RESTful API I wrote in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement I decided to rewrite the python API to work with Node.js as well. I was really interested in this artifact since I first started working on it for my CS-340 class. In the past few years, the popularity of RESTful APIs has gone through the roof. Companies are now breaking up their monolithic programs into different microservices to increase efficiency and speed. Python and Node.js are popular languages that are used to accomplish this and since I had already created the API in Python, I wanted to challenge myself and accomplish the same with the JavaScript language. I think this will be beneficial for others as well because if we considered this project opened to others, then having both a Python and Node.js API available to developers will ensure they can keep the same language throughout their full project instead of having a piece written in Python. I believe this demonstrates an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals. Perhaps the most challenging part while working on this enhancement was my constant mix up of wanting to write the application with a Python syntax style when the JavaScript syntax is very different. I also learned how to set up a simple server in node.js that listened for API calls and then correctly responded. I definitely learned that I enjoyed working with Node.js as a backend language as well.          
          
+
+
 
 
 ### Enhancement Two
@@ -244,10 +252,14 @@ You can find the code at [Enhancement Two Bitbucket](https://bitbucket.org/edgar
 
 In cases where image doesn't load [Register for a Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_3.png "Register for a Token")
 
+
+
 ![No Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_4.png "No Token")
 
 
 In cases where image doesn't load [No Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_4.png "No Token")
+
+
 
 ![Correct Token Supplied](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_5.png "Correct Token Supplied")
 
@@ -259,6 +271,8 @@ In cases where image doesn't load [Correct Token Supplied](https://github.com/ed
 The artifact I decided to use for my second enhancement was to continue improving and iterating on my enhancement one Node.js RESTful API I wrote, but now with a focus on improving the security of the whole application. Again, as mentioned before this RESTful API was originally written in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement, I decided to add a form of authorization and authentication to the API to ensure that only people authorized could use the API. 
 I felt this artifact was important to include in my ePortfolio because often times many developers fail to consider security when developing new apps, programs, or applications. Very often our first ideas and effort are spent on how to develop this new program to fulfill our needs and then only after are we close to done do we consider how to secure it. I think moving forward in the future, developers should start any development with security as a foundational piece. This will not only make the application more secure but will help developers think differently in a positive way. I think this artifact demonstrates the course objective of designing and evaluating computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices. The added security also shows the use of a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources. Perhaps, the hardest part of this artifact was getting the authorization and authentication to work together correctly. In a previous internship as an IOT engineer intern, we often worked with edge devices through some interface and used the concept of Bearer Tokens to establish authorization. I decided to follow the same principle in this artifact but didn’t anticipate the difficulty of getting it to work together with my API that was already written. This is also why, moving forward I will consider the implementation of security before developing any code and this will save development time and efforts.
 
+
+
 ### Enhancement Three
 #### Expanding API Routes
 You can find the code at [Enhancement Three Bitbucket](https://bitbucket.org/edgarr_t/enhancementthree/src/master/).
@@ -267,7 +281,11 @@ You can find the code at [Enhancement Three Bitbucket](https://bitbucket.org/edg
 ![Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
 
 
+
+
 In cases where image doesn't load [Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
+
+
 
 
 
