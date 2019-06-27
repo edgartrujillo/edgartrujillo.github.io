@@ -173,7 +173,7 @@ if __name__ == '__main__': #declare instance of request
 ```
 
 ### Code Review on Initial Python Code 
-![Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_10.png)
+![Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_10.png)
 
 
 You can find the powerpoint presentation at [Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Code%20Reviews.pptx).
@@ -228,7 +228,7 @@ node app.js
 #### Refactoring the Python code into JavaScript and using Node.js as the backend  
 You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
 
-![Enhancement One Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_7.png "Enhancement One Routes")
+![Enhancement One Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_7.png "Enhancement One Routes")
 
 
 In cases where image doesn't load [Enhancement One Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_7.png "Enhancement One Routes")
@@ -236,7 +236,7 @@ In cases where image doesn't load [Enhancement One Routes](https://github.com/ed
 
 
 
-![Creating a Stock](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_9.png "Creating a Stock")
+![Creating a Stock](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_9.png "Creating a Stock")
 
 
 
@@ -255,21 +255,21 @@ The artifact I decided to use for my first enhancement was a RESTful API I wrote
 #### Securing the API
 You can find the code at [Enhancement Two Bitbucket](https://bitbucket.org/edgarr_t/enhancementtwo/src/master/).
 
-![Register for a Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_3.png "Register for a Token")
+![Register for a Token](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_3.png "Register for a Token")
 
 
 In cases where image doesn't load [Register for a Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_3.png "Register for a Token")
 
 
 
-![No Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_4.png "No Token")
+![No Token](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_4.png "No Token")
 
 
 In cases where image doesn't load [No Token](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_4.png "No Token")
 
 
 
-![Correct Token Supplied](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_5.png "Correct Token Supplied")
+![Correct Token Supplied](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_5.png "Correct Token Supplied")
 
 
 In cases where image doesn't load [Correct Token Supplied](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_5.png "Correct Token Supplied")
@@ -286,10 +286,7 @@ I felt this artifact was important to include in my ePortfolio because often tim
 You can find the code at [Enhancement Three Bitbucket](https://bitbucket.org/edgarr_t/enhancementthree/src/master/).
 
 
-![Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
-
-
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/raw/master/Screenshot_8.png "Enhancement Three Routes")
 
 
 In cases where image doesn't load [Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
