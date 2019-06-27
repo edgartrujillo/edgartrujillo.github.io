@@ -174,6 +174,8 @@ if __name__ == '__main__': #declare instance of request
 
 ### Code Review on Initial Python Code 
 ![Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_10.png)
+
+
 You can find the powerpoint presentation at [Code Review Powerpoint](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Code%20Reviews.pptx).
 
 
