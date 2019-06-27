@@ -213,9 +213,9 @@ node app.js
 #### Refactoring the Python code into JavaScript and using Node.js as the backend  
 You can find the code at [Enhancement One Bitbucket](https://bitbucket.org/edgarr_t/enhancementone/src/master/).
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_7.png "Enhancement One Routes")
+![alt text](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_7.png "Enhancement One Routes")
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_9.png "Creating a Stock")
+![alt text](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_9.png "Creating a Stock")
 
 The artifact I decided to use for my first enhancement was a RESTful API I wrote in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement I decided to rewrite the python API to work with Node.js as well. I was really interested in this artifact since I first started working on it for my CS-340 class. In the past few years, the popularity of RESTful APIs has gone through the roof. Companies are now breaking up their monolithic programs into different microservices to increase efficiency and speed. Python and Node.js are popular languages that are used to accomplish this and since I had already created the API in Python, I wanted to challenge myself and accomplish the same with the JavaScript language. I think this will be beneficial for others as well because if we considered this project opened to others, then having both a Python and Node.js API available to developers will ensure they can keep the same language throughout their full project instead of having a piece written in Python. I believe this demonstrates an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals. Perhaps the most challenging part while working on this enhancement was my constant mix up of wanting to write the application with a Python syntax style when the JavaScript syntax is very different. I also learned how to set up a simple server in node.js that listened for API calls and then correctly responded. I definitely learned that I enjoyed working with Node.js as a backend language as well.          
          
@@ -227,13 +227,13 @@ You can find the code at [Enhancement Two Bitbucket](https://bitbucket.org/edgar
 
 ![alt text][logo]
 
-[logo]: https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_3.png "Register for a Token"
+[logo]: https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_3.png "Register for a Token"
 
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_4.png "No Token")
+![alt text](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_4.png "No Token")
 
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_5.png "Correct Token Supplied")
+![alt text](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_5.png "Correct Token Supplied")
 
 
 The artifact I decided to use for my second enhancement was to continue improving and iterating on my enhancement one Node.js RESTful API I wrote, but now with a focus on improving the security of the whole application. Again, as mentioned before this RESTful API was originally written in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. For this enhancement, I decided to add a form of authorization and authentication to the API to ensure that only people authorized could use the API. 
@@ -244,7 +244,7 @@ I felt this artifact was important to include in my ePortfolio because often tim
 You can find the code at [Enhancement Three Bitbucket](https://bitbucket.org/edgarr_t/enhancementthree/src/master/).
 
 
-![alt text](https://bitbucket.org/edgarr_t/cs499project_images/src/master/Screenshot_8.png "Enhancement Three Routes")
+![alt text](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
 
 
 Following the iteration process, for my third enhancement I decided to continue improving and iterating on my enhancement one Node.js RESTful API I wrote, but now focusing on expanding the API’s capabilities through data mining and adding more advanced concepts of MySQL. Again, as mentioned before this RESTful API was originally written in Python for my CS-340 class and it was our final project. The purpose of the API was to quickly get stock information from a Mongo Database. The API provided a simple interface to accomplish this and allows a developer to integrate this database in a program of their choice since they can easily use the REST API. 
