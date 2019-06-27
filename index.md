@@ -286,9 +286,10 @@ I felt this artifact was important to include in my ePortfolio because often tim
 You can find the code at [Enhancement Three Bitbucket](https://bitbucket.org/edgarr_t/enhancementthree/src/master/).
 
 
-![Enhancement Three Routes](https://raw.githubusercontent.com/edgartrujillo/edgartrujillo.github.io/master/Screenshot_8.png")
+![Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes)
 
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 
 In cases where image doesn't load [Enhancement Three Routes](https://github.com/edgartrujillo/edgartrujillo.github.io/blob/master/Screenshot_8.png "Enhancement Three Routes")
